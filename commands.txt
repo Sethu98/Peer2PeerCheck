@@ -12,3 +12,5 @@ RUST_LOG=info  cargo run -- --relay-address /ip4/130.245.173.221/tcp/4001/p2p/12
 # txindex - Index transactions
 # fallbackfee - Fee rate for miner
 bitcoind -fallbackfee=0.0002 -txindex
+
+RUST_LOG=info ./kad-node --relay-address /ip4/130.245.173.221/tcp/4001/p2p/12D3KooWDpJ7As7BWAwRMfu1VU2WCqNjvq387JEYKDBj4kx6nXTN --secret-key-seed 13 --bootstrap-peer-id 12D3KooWPcfGdBCrdxX9nqGAdPAdkPMqfKEDjbZWGA4UFBJuY4rP
